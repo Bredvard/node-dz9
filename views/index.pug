@@ -1,0 +1,11 @@
+doctype html
+html
+  head
+    title= title
+  body
+    if users && users.length
+      ul
+        each user in users
+          li #{user.name}
+    else
+          p Користувачів поки немає
